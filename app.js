@@ -6,7 +6,7 @@ const app = express()
 //   response.sendFile('./gadgets.html', {root: __dirname})
 // })
 app.get("/gadgets", (request, response) => {
-  response.sendFile(path.join(__dirname, "gadgets.html"));
+  response.sendFile("./gadgets.html", { root: __dirname });
 });
 
 module.exports = app
